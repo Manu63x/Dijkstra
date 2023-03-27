@@ -1,7 +1,7 @@
+import java.util.PriorityQueue;
 import java.util.Vector;
 public class Main {
     public static void main(String[] args) {
-    //Simple Dijkstra algorithm implementation in Java.
         Vector<Node> nodi = new Vector<>();
         for (int i=0; i<5; i++){
             nodi.add(new Node("" + (char) ('A' + i)));
@@ -15,10 +15,6 @@ public class Main {
         for (Node a: nodi) {
             System.out.println(a.printLinks());
         }
-    }
-    public Vector dijkstra(Vector<Node> nodi){
-        Vector<Node> best_path = new Vector<>();
-
-        return best_path;
+        nodi.elementAt(0).dijkstra(nodi.elementAt(4));
     }
 }
